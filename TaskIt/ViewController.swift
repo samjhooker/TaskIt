@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate { //adds table view datasource and delegate classes
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +18,20 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    //UITableViewDataSource
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int { //default function must be added
+        return 0
+    }
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
+    //UITableViewDelegate
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        
     }
 
 
