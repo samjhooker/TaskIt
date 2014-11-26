@@ -39,6 +39,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         var cell:TaskCell = tableView.dequeueReusableCellWithIdentifier("myCell") as TaskCell  // creates a reusable cell, (specified as "myCell" within the storyboard), can reuse this cell and change the data for each item.
         
+        //created these attributes as apart of the taskcell subclass
+        cell.taskLabel.text = "Do Stuff"
+        cell.subtaskLabel.text = "actually go aoutside and do stuff"
+        cell.dateLabel.text = "01/01/2001"
+        
         return cell
     }
     
