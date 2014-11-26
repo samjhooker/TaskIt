@@ -27,10 +27,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     //UITableViewDataSource
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int { //default function must be added
-        return 0
+        return 5  //number of rows shown
     }
+    
+    
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        
+        //indexPath is the position in list, ie, 0->infinity
+        println(indexPath.row)
+        
+        var cell:TaskCell = tableView.dequeueReusableCellWithIdentifier("myCell") as TaskCell  // creates a reusable cell, (specified as "myCell" within the storyboard), can reuse this cell and change the data for each item.
+        
+        return cell
     }
     
     //UITableViewDelegate
