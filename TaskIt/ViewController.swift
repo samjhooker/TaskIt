@@ -20,10 +20,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let task1 = TaskModel(task: "Study French", subtask: "Verbs", date: "01/01/2001")
-        let task2 = TaskModel(task: "Eat Dinner", subtask: "Burgers", date: "02/01/2001")
+        let task1 = TaskModel(task: "Study French", subtask: "Verbs", date: Date.from(year: 2014, month: 05, day: 20))
+        let task2 = TaskModel(task: "Eat Dinner", subtask: "Burgers", date: Date.from(year: 2014, month: 06, day: 15))
         
-        taskArray += [task1, task2, TaskModel(task: "Gym", subtask: "Leg Day", date: "03/02/2003")]
+        taskArray += [task1, task2, TaskModel(task: "Gym", subtask: "Leg Day", date: Date.from(year: 2014, month: 05, day: 29))]
         
         tableView.reloadData() //recalls the table view functions to update the table view
         
@@ -64,7 +64,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //created these attributes as apart of the taskcell subclass
         cell.taskLabel.text = thisTask.task
         cell.subtaskLabel.text = thisTask.subtask
-        cell.dateLabel.text = thisTask.date
+        //cell.dateLabel.text = "\(thisTask.date)" this will work but will add hour/min/sec aswell
+        cell.dateLabel.text = Date.toString(date: thisTask.date)
         
         return cell
     }

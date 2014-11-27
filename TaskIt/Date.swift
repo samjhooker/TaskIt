@@ -20,6 +20,17 @@ class Date{
         var gregorianCalendar = NSCalendar(identifier: NSGregorianCalendar) //creates an NSCallender instance that can be used to create a NSDate
         var date = gregorianCalendar.dateFromComponents(componants)
         
-        return NSDate()
+        return date!
+
+    }
+    
+    
+    class func toString(#date:NSDate) -> String {
+        
+        let dateStringFormatter = NSDateFormatter()
+        dateStringFormatter.dateFormat = "dd.MM.yyyy"
+        let dateString = dateStringFormatter.stringFromDate(date)
+        
+        return dateString
     }
 }

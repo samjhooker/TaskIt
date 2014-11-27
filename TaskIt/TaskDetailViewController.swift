@@ -24,6 +24,7 @@ class TaskDetailViewController: UIViewController {
         
         taskTextField.text = self.detailTaskModel.task
         subtaskTextField.text = self.detailTaskModel.subtask
+        dueDatePicker.date = detailTaskModel.date
         
     }
 
