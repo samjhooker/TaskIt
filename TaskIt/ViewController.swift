@@ -13,21 +13,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var tableView: UITableView!
     
     
-    var taskArray:[Dictionary<String,String>] = [] // creates an array of dictionary tuples
+    var taskArray:[TaskModel] = [] // creates an array of dictionary tuples
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let task1:Dictionary<String,String> = ["task": "Study French", "subtask": "learning to use Verbs correctly", "date": "01/01/2002"]
-        //can use certain bits of data, ie. task1["task"] = "Study French"
+        let task1 = TaskModel(task: "Study French", subtask: "Verbs", date: "01/01/2001")
+        let task2 = TaskModel(task: "Eat Dinner", subtask: "Burgers", date: "02/01/2001")
         
-        let task2:Dictionary<String,String> = ["task": "Eat Dinner", "subtask": "eat all the brocolli until you are no longer hungry", "date": "02/01/2002"]
-        
-        let task3:Dictionary<String,String> = ["task": "go to Gym", "subtask": "Do not be fat", "date": "03/01/2002"]
-        
-        taskArray += [task1, task2, task3]
+        taskArray += [task1, task2, TaskModel(task: "Gym", subtask: "Leg Day", date: "03/02/2003")]
         
         tableView.reloadData() //recalls the table view functions to update the table view
         
@@ -53,12 +49,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         var cell:TaskCell = tableView.dequeueReusableCellWithIdentifier("myCell") as TaskCell  // creates a reusable cell, (specified as "myCell" within the storyboard), can reuse this cell and change the data for each item.
         
-        let taskDict:Dictionary = taskArray[indexPath.row]
+        let thisTask = taskArray[indexPath.row]
         
         //created these attributes as apart of the taskcell subclass
-        cell.taskLabel.text = taskDict["task"]
-        cell.subtaskLabel.text = taskDict["subtask"]
-        cell.dateLabel.text = taskDict["date"]
+        cell.taskLabel.text = thisTask.task
+        cell.subtaskLabel.text = thisTask.subtask
+        cell.dateLabel.text = thisTask.date
         
         return cell
     }
