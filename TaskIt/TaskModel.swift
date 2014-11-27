@@ -11,5 +11,5 @@ import Foundation
 struct TaskModel {
     var task:String
     var subtask:String
-    var date:String
+    var date:NSDate  //NSDate not curretnly a well supported datatype therefore one must create a seperate Date Class
 }

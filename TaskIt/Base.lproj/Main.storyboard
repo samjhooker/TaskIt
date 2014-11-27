@@ -65,11 +65,53 @@
                     <navigationItem key="navigationItem" id="1rW-rL-Z7o"/>
                     <connections>
                         <outlet property="tableView" destination="dEh-7Z-7UE" id="5TY-PF-znm"/>
+                        <segue destination="qot-BX-mUx" kind="show" identifier="showTaskDetail" id="fSj-m8-3hA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1421" y="460"/>
+            <point key="canvasLocation" x="888" y="442"/>
+        </scene>
+        <!--Task Detail View Controller-->
+        <scene sceneID="LCP-KX-3pM">
+            <objects>
+                <viewController id="qot-BX-mUx" customClass="TaskDetailViewController" customModule="TaskIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r9Z-9N-2oT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xvm-eE-n1P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JEL-LE-322">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="subTask" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OCM-KM-Jx0">
+                                <rect key="frame" x="38" y="144" width="245" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="nVg-a4-vY6">
+                                <rect key="frame" x="0.0" y="196" width="320" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="438747493.35727">
+                                    <!--2014-11-27 02:18:13 +0000-->
+                                </date>
+                            </datePicker>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Task" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CaP-zv-o3p">
+                                <rect key="frame" x="38" y="92" width="245" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="dueDatePicker" destination="nVg-a4-vY6" id="Ctw-wc-vvr"/>
+                        <outlet property="subtaskTextField" destination="OCM-KM-Jx0" id="CyZ-QH-HN9"/>
+                        <outlet property="taskTextField" destination="CaP-zv-o3p" id="z95-t9-hzh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hG1-4h-cdL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1578" y="443"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yWs-GM-jH5">
@@ -87,7 +129,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DfA-ge-zDz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="609" y="460"/>
+            <point key="canvasLocation" x="211" y="442"/>
         </scene>
     </scenes>
 </document>

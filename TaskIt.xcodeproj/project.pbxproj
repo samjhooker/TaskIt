@@ -15,6 +15,8 @@
 		7EA672431A2538CE00BF1655 /* TaskItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA672421A2538CE00BF1655 /* TaskItTests.swift */; };
 		7EA6724D1A253ED900BF1655 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA6724C1A253ED800BF1655 /* TaskCell.swift */; };
 		7EA6724F1A26BEAF00BF1655 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA6724E1A26BEAF00BF1655 /* TaskModel.swift */; };
+		7EA672511A26C0A200BF1655 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA672501A26C0A200BF1655 /* TaskDetailViewController.swift */; };
+		7EA672531A26E9F000BF1655 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA672521A26E9F000BF1655 /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		7EA672421A2538CE00BF1655 /* TaskItTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItTests.swift; sourceTree = "<group>"; };
 		7EA6724C1A253ED800BF1655 /* TaskCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		7EA6724E1A26BEAF00BF1655 /* TaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		7EA672501A26C0A200BF1655 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
+		7EA672521A26E9F000BF1655 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 			children = (
 				7EA6722C1A2538CE00BF1655 /* AppDelegate.swift */,
 				7EA6722E1A2538CE00BF1655 /* ViewController.swift */,
+				7EA672521A26E9F000BF1655 /* Date.swift */,
+				7EA672501A26C0A200BF1655 /* TaskDetailViewController.swift */,
 				7EA6724E1A26BEAF00BF1655 /* TaskModel.swift */,
 				7EA6724C1A253ED800BF1655 /* TaskCell.swift */,
 				7EA672301A2538CE00BF1655 /* Main.storyboard */,
@@ -219,9 +225,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EA6722F1A2538CE00BF1655 /* ViewController.swift in Sources */,
+				7EA672531A26E9F000BF1655 /* Date.swift in Sources */,
 				7EA6724D1A253ED900BF1655 /* TaskCell.swift in Sources */,
 				7EA6724F1A26BEAF00BF1655 /* TaskModel.swift in Sources */,
 				7EA6722D1A2538CE00BF1655 /* AppDelegate.swift in Sources */,
+				7EA672511A26C0A200BF1655 /* TaskDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
