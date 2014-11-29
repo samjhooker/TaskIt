@@ -76,6 +76,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         performSegueWithIdentifier("showTaskDetail", sender: self)
     }
 
+    @IBAction func addButtonPressed(sender: AnyObject) {
+        
+        self.performSegueWithIdentifier("showTaskAdd", sender: self)
+    }
 
 }
 

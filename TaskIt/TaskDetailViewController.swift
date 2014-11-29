@@ -34,6 +34,9 @@ class TaskDetailViewController: UIViewController {
     }
     
 
+    @IBAction func cancelButtonTapped(sender: AnyObject) {
+        self.navigationController?.popViewControllerAnimated(true) // anytime where within view controler, one can access the naviagion conroller properties, this function simply pops back to the previous navigation controller
+    }
     
 
 }

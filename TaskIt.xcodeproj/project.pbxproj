@@ -17,6 +17,7 @@
 		7EA6724F1A26BEAF00BF1655 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA6724E1A26BEAF00BF1655 /* TaskModel.swift */; };
 		7EA672511A26C0A200BF1655 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA672501A26C0A200BF1655 /* TaskDetailViewController.swift */; };
 		7EA672531A26E9F000BF1655 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA672521A26E9F000BF1655 /* Date.swift */; };
+		7EA672551A27ED0200BF1655 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA672541A27ED0200BF1655 /* AddTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		7EA6724E1A26BEAF00BF1655 /* TaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		7EA672501A26C0A200BF1655 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
 		7EA672521A26E9F000BF1655 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		7EA672541A27ED0200BF1655 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				7EA6722E1A2538CE00BF1655 /* ViewController.swift */,
 				7EA672521A26E9F000BF1655 /* Date.swift */,
 				7EA672501A26C0A200BF1655 /* TaskDetailViewController.swift */,
+				7EA672541A27ED0200BF1655 /* AddTaskViewController.swift */,
 				7EA6724E1A26BEAF00BF1655 /* TaskModel.swift */,
 				7EA6724C1A253ED800BF1655 /* TaskCell.swift */,
 				7EA672301A2538CE00BF1655 /* Main.storyboard */,
@@ -230,6 +233,7 @@
 				7EA6724F1A26BEAF00BF1655 /* TaskModel.swift in Sources */,
 				7EA6722D1A2538CE00BF1655 /* AppDelegate.swift in Sources */,
 				7EA672511A26C0A200BF1655 /* TaskDetailViewController.swift in Sources */,
+				7EA672551A27ED0200BF1655 /* AddTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
