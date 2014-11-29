@@ -37,11 +37,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == "showTaskDetail" { // the folowing sends te data from the TaskModels to taskDetailViewController
-            let detailVC: TaskDetailViewController = segue.destinationViewController as TaskDetailViewController
+            let detailVC: TaskDetailViewController = segue.destinationViewController as TaskDetailViewController //access an instance of taskDetailViewController
             let indexPath = self.tableView.indexPathForSelectedRow()
             let thisTask = taskArray[indexPath!.row]
             detailVC.detailTaskModel = thisTask
+            detailVC.mainVC = self
         }
+        else if segue.identifier == "showTaskAdd"{
+            let addTaskVC:AddTaskViewController = segue.destinationViewController as AddTaskViewController
+            addTaskVC.mainVC = self //sets this ViewController as the vc referenced within the addTaskViewController class
+        }
+    }
+    
+    
+    override func viewDidAppear(animated: Bool) {           //this function is called everytime the vc is loaded, viewDidLoad is only called once when app is first opened
+        super.viewDidAppear(animated)
+        self.tableView.reloadData()//standard function for all table view items.
     }
     
     
